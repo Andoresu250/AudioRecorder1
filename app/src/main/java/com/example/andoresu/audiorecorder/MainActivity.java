@@ -112,10 +112,9 @@ public class MainActivity extends AppCompatActivity {
             m.stop();
         }
 
-        m = new MediaPlayer();
-
         try {
-            m.setDataSource(outputFile);
+            m = new MediaPlayer();
+            m.setDataSource(audio);
             m.prepare();
             m.start();
             Toast.makeText(getApplicationContext(), "Playing audio", Toast.LENGTH_LONG).show();
